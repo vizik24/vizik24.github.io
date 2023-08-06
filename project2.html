@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Portfolio - Max Mycroft</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/slideshowStyles.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.css" integrity="sha384-D+9gmBxUQogRLqvARvNLmA9hS2x//eK1FhVb9PiU86gmcrBrJAQT8okdJ4LMp2uv" crossorigin="anonymous">
+
+		<!-- The loading of KaTeX is deferred to speed up page rendering -->
+		<script src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.js" integrity="sha384-483A6DwYfKeDa0Q52fJmxFXkcPCFfnXMoXblOkJ4JcA8zATN6Tm78UNL72AKk+0O" crossorigin="anonymous"></script>
+	
+		<!-- To automatically render math in text elements, include the auto-render extension: -->
+		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/contrib/auto-render.min.js" integrity="sha384-yACMu8JWxKzSp/C1YV86pzGiQ/l1YUfE8oPuahJQxzehAjEt2GiQuy/BIvl9KyeF" crossorigin="anonymous"
+			onload="renderMathInElement(document.body);"></script>
+		</style>
+	
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Max Mycroft</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Projects</a></li>
+							<li><a href="CV.html">CV</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/max-mycroft/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Projects Intro-->
+							<article class="post featured">
+								<header class="major">
+
+									<h2><a href="#">Climbing Weather Index</a></h2>
+									<p>ArcGIS Desktop, Python, Excel / Personal Project </p>
+								</header>
+								<p><div>
+                                    
+
+									Much like most British people, rock climbers love to complain about the weather, especially if it means we can't finish a route.
+									Factors like precipitation, humidity and air temperature have a huge effect on how the rock feels, and how much friction there is between
+									your skin and the rock. For this reason
+									many people only climb Gritstone in the early spring, late autumn and winter.
+									Characterized by smooth faces, slopey holds and the potential for hitting the ground when you fall off, friction can be a huge factor 
+									in whether you are able to send a route or not.
+
+
+									<img src="images/maps/CWI Map1.jpg" width="800"/>
+
+									<br>The map above shows the average daytime Climbing Weather Index (CWI) for 03/07/2023. Lighter colours represent lower values, 
+									and therefore better climbing conditions. </br>
+
+									<br>The climbing weather index was calculated using multiple regression analysis to determine the influence of various historical 
+									meteorological data on the number of climbers attending three case study crags across the UK. Crags were chosen for 3 popular rock types
+									climbed in the UK (gritstone, rhyolite and limestone). See the equation below, where T = air temperature, 
+									H = relative humidity and W = wind speed. </br>
+
+
+									<br> \(CWI = \sqrt{(0.112883T)^2 + (-0.192465H)^2 + (-0.100107W)^2}\)</br>
+
+									<br>The CWI was developed using the following data: air temperature, relative humidity, and wind speed. Rain, while it would affect friction greatly,
+									is not included in the CWI as climbing on wet rock leads to increased erosion.
+									
+									Future work could improve upon the CWI by expanding the case study sample data to include data on more weather factors that cover a longer 
+									time window, as well as increasing the number of and variation of rock types and climbing styles present in the case study data. It would also 
+									be useful for future applications to include a sub-index for
+									the various climbing styles, as different conditions are favourable for bouldering compared to mountaineering, for example.  </br>
+
+									
+                               
+                                <ul class="actions special">
+									<li><a href="index.html" class="button">More Projects</a></li>
+							</article>
+
+						
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="split contact">
+							
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">max.mycroft@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="#" class="icon brands alt fa-linkedin"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
