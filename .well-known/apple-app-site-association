@@ -3,9 +3,40 @@
     "apps": [],
     "details": [
       {
-        "appID": "com.example.parkBenchSocialV2",
+        "appID": "U25F54U2AY.com.example.parkBenchSocialV2",
         "paths": [ "/content/*" ]
       }
     ]
   }
+}
+
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "U25F54U2AY.com.example.parkBenchSocialV2",
+        ],
+        "components": [
+          {
+            "#": "no_universal_links",
+            "exclude": true,
+            "comment": "Matches any URL with a fragment that equals no_universal_links and instructs the system not to open it as a universal link."
+          },
+          {
+            "/": "/content/*",
+            "comment": "Matches any URL with a path that starts with /content/."
+          },
+          {
+            "/": "/help/*",
+            "?": { "articleNumber": "????" },
+            "comment": "Matches any URL with a path that starts with /help/ and that has a query item with name 'articleNumber' and a value of exactly four characters."
+          }
+        ]
+       }
+     ]
+   },
+   "webcredentials": {
+      "apps": [ "U25F54U2AY.com.example.parkBenchSocialV2" ]
+   }
 }
